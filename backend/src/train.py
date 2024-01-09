@@ -1,4 +1,4 @@
-import tez
+from tez import Tez
 import pandas as pd
 from sklearn import model_selection, metrics, preprocessing
 import torch
@@ -28,7 +28,7 @@ class MovieDataset:
             }
 
 
-class RecSysModel(tez.Model):
+class RecSysModel(nn.Module):
     def __init__(self, num_users, num_movies):
         super().__init__()
         self.user_embed = nn.Embedding(num_users, 32)
@@ -97,6 +97,8 @@ def train():
     
     device = "cpu"
     model.to(device)
+    
+    model = Tez(model)
 
     model.fit(
         train_dataset, valid_dataset,
