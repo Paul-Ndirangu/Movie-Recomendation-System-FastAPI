@@ -5,6 +5,7 @@ This repository houses the backend of a movie recommendation system built using 
 ### Features
 
 * **Collaborative Filtering**: Employs both user-based and item-based collaborative filtering algorithms to generate personalized recommendations.
+
 ![colaborative filtering](c_filtering.png)
 
 * **FastAPI**: Provides a robust and performant RESTful API for interacting with the model and its recommendations.
