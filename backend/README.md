@@ -23,11 +23,15 @@ This repository houses the backend of a movie recommendation system built using 
 1. Clone the repository.
 2.  `cd backend`
 3. Create a virtual environment and activate it.
-    **Linux**<br />
-    `virtualenv venv`
+
+    * **Linux**
+    > `virtualenv venv`
+
     Activate virtual environment
-    `source venv/bin/activate`
-    **Windows**
+
+    > `source venv/bin/activate`
+    
+    * **Windows**
 
 4. Run `pip install -r requirements.txt` to install required dependencies.
 5. Start the API server with `uvicorn main:app --reload`.
