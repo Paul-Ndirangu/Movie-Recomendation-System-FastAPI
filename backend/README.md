@@ -14,7 +14,7 @@ This repository houses the backend of a movie recommendation system built using 
 **1. Prerequisites:**
 
 - Python 3.7+
-- pipenv
+- pipenv or virtualenv
 - PyTorch
 - FastAPI
 
